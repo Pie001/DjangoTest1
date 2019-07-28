@@ -1,0 +1,13 @@
+<h1>총 단어수 : {{length}}</h1>
+
+<a href="{% url 'home' %}">back home</a>
+<br>
+<h2>입력한 텍스트: </h2>
+{{full}}
+
+<h2>단어 카운트: </h2>
+{% for key,value in dic  %}
+
+{{key}} : {{value}}
+<br>
+{% endfor %}
